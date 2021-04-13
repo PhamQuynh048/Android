@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_toRightOf="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_below="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_toRightOf="@+id/tvQuantity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_below="@+id/tvQuantity"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tvQuantity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/btView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW"
+        android:layout_below="@+id/btSave"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tvQuantity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
